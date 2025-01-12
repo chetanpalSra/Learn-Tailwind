@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Container Class</title>
+    <link rel="stylesheet" href="output.css">
+
+</head>
+<body>
+    <!-- Container class is used for responsive design and to structure our UI. -->
+   <!-- Bootstrap and Tailwind has same container class name and almost similar features. -->  
+   <div class="bg-gray-900">
+      <ul class="flex text-white [&>*]:flex">
+        <li class="p-3  hover:bg-zinc-800"><a href="#">Home</a></li>
+        <li class="p-3  hover:bg-zinc-800"><a href="#">About</a></li>
+        <li class="p-3  hover:bg-zinc-800"><a href="#">Login</a></li>
+        <li class="p-3  hover:bg-zinc-800"><a href="#">Logout</a></li>
+      </ul>
+   </div>
+   
+   <div class="bg-red-200 mx-auto container"> 
+    <!-- centering the element,to center we have to apply both container and mx-auto. -->
+      Code step by step.
+   </div>
+   <!-- or apply center: true in tailwind.config.js file,then we can center element only by using container class.-->
+   <div class="bg-blue-200 container"> 
+    <!-- centering the element. -->
+      Code step by step.
+   </div>
+   <div class="bg-yellow-200 container"> 
+
+      Code step by step.
+   </div>
+   <div class="bg-green-200 container"> 
+
+      Code step by step.
+   </div>
+   <div class="bg-lime-200 container"> 
+  
+      Code step by step.
+   </div>
+</body>
+</html>

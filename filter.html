@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Filter.</title>
+    <link rel="stylesheet" href="output.css">
+</head>
+<body>
+    <h1 class="blur-sm">Blur</h1>
+   <img  src="img1.jpg" alt="Missing!" height="500px" width="500px">
+   <img class="blur-sm" src="img1.jpg" alt="Missing!" height="500px" width="500px">
+   <img class="blur-md" src="img1.jpg" alt="Missing!" height="500px" width="500px">
+   <img class="blur-xl" src="img1.jpg" alt="Missing!" height="500px" width="500px">
+   <img class="blur" src="img1.jpg" alt="Missing!" height="500px" width="500px">
+
+   <!-- There are many more blur such as blur-2xl,etc.  -->
+
+   <h1 class="brightness-75 text-white m-4">Brightness</h1>
+
+   <img  src="img1.jpg" alt="Missing!" height="500px" width="500px">
+   <img  class="brightness-50" src="img1.jpg" alt="Missing!" height="500px" width="500px" >
+   <img  class="brightness-100" src="img1.jpg" alt="Missing!" height="500px" width="500px" >
+   <img  class="brightness-150" src="img1.jpg" alt="Missing!" height="500px" width="500px" >
+   <img  class="brightness-200" src="img1.jpg" alt="Missing!" height="500px" width="500px" >
+
+
+
+   <h1>Contrast</h1>
+
+   <img  src="img1.jpg" alt="Missing!" height="500px" width="500px">
+   <img class="contrast-0"  src="img1.jpg" alt="Missing!" height="500px" width="500px">
+   <img  class="contrast-50" src="img1.jpg" alt="Missing!" height="500px" width="500px">
+   <img  class="contrast-100" src="img1.jpg" alt="Missing!" height="500px" width="500px">
+   <img  class="contrast-125" src="img1.jpg" alt="Missing!" height="500px" width="500px">
+   <img  class="contrast-200" src="img1.jpg" alt="Missing!" height="500px" width="500px">
+
+   <h1>GreyScale</h1>
+
+   <img  src="img1.jpg" alt="Missing!" height="500px" width="500px">
+   <img  class="grayscale " src="img1.jpg" alt="Missing!" height="500px" width="500px">
+
+   <h1>Invert</h1>
+
+   <img  src="img1.jpg" alt="Missing!" height="500px" width="500px">
+   <img  class="invert" src="img1.jpg" alt="Missing!" height="500px" width="500px"> 
+
+   <h1>Hue</h1>
+
+   <img  src="img1.jpg" alt="Missing!" height="500px" width="500px">
+   <img  class="hue-rotate-15" src="img1.jpg" alt="Missing!" height="500px" width="500px">
+   <img  class="hue-rotate-30" src="img1.jpg" alt="Missing!" height="500px" width="500px">
+   <img  class="hue-rotate-60" src="img1.jpg" alt="Missing!" height="500px" width="500px">
+   
+   <img  class="hue-rotate-180" src="img1.jpg" alt="Missing!" height="500px" width="500px">
+   
+ 
+ 
+</body>
+</html>
+
+<!-- Hue is the quality that distinguishes one color from another on the color spectrum.
+Hue is represented as a degree on a color wheel, ranging from 0° to 360°:
+0° = Red
+60° = Yellow
+120° = Green
+180° = Cyan
+240° = Blue
+300° = Magenta
+360° = Back to Red 
+
+The CSS class hue-rotate-60 would apply a hue rotation of 60 degrees to an element's colors using the filter: hue-rotate(60deg) property.
+
+What Happens with hue-rotate(60deg)?
+The colors in the element are shifted 60° around the 360° color wheel.
+Each pixel's hue value is increased by 60° (modulo 360), causing a slight change in the appearance of the colors.
+Example Transformations:
+Red (0°) → Yellow (60°)
+Yellow (60°) → Green (120°)
+Green (120°) → Cyan (180°)
+-->

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Size with Tailwind</title>
+    <link rel="stylesheet" href="output.css">
+</head>
+<body class="h-screen">
+    <!-- Size manipulate both height and width simultaneously. -->
+    <div class="bg-red-400 h-52 w-52">
+        <h1>Code step by step.</h1>
+    </div>
+
+    <!-- Now we can do this above thing as:
+     -->
+
+     <div class="bg-orange-400 size-52">
+        <h1>Code step by step.</h1>
+    </div>
+
+    <!-- Add h-screen in body tag as to set height properly. -->
+     <div class="bg-lime-400 size-1/2">
+        <h1>Code step by step.</h1>
+    </div>
+
+     <div class="bg-yellow-400 size-[200px]">
+        <h1>Code step by step.</h1>
+    </div>
+
+     <div class="bg-slate-400 size-[10rem]">
+        <h1>Code step by step.</h1>
+    </div>
+
+     <div class="bg-zinc-400 size-full">
+        <h1>Code step by step.</h1>
+    </div>
+
+     <div class="bg-blue-400 size-1/4 hover:size-1/2 hover:bg-green-200">
+        <h1>Code step by step.</h1>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Positions in tailwind</title>
+    <link rel="stylesheet" href="output.css">
+</head>
+<body>
+    <div class="bg-slate-600 size-96 relative mb-3">
+        <div class="bg-red-300 size-20 absolute bottom-0 right-0">
+            Bottom-right.
+        </div>
+        <div class="bg-blue-300 size-20 absolute top-0 right-0">
+            Top-right.
+        </div>
+        <div class="bg-green-300 size-20 absolute bottom-0 left-0">
+            Bottom-left.
+        </div>
+        <div class="bg-lime-300 size-20 absolute top-0 left-0">
+            Top-left.
+        </div>
+    </div>
+  <div class="bg-blue-500"> 
+    <!-- THis upper div has no size means it has full width of viewport but no height so no color will be applied to it as it has zero size .read below comments written at end, as it has zero size so below div will come in its place. -->
+    <h1 class="bg-red-900 fixed z-10">
+        Code step by step.
+    </h1>
+  </div>
+    <div class="bg-gray-900 size-56 relative">
+        <div class="bg-white size-32 inset-9 absolute"></div>
+    </div>
+    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eligendi fuga asperiores doloremque labore cupiditate quam eum? Eligendi alias iste totam enim debitis. Minima quo, delectus adipisci vitae esse illo voluptatem officiis optio debitis porro commodi. Veniam, eum exercitationem. Accusantium quae aperiam voluptates cumque ullam, suscipit consequuntur veritatis commodi nulla totam porro voluptatibus dicta placeat amet blanditiis animi dolores explicabo recusandae eaque error sapiente sed accusamus iure obcaecati. Veniam molestiae odio cupiditate voluptates reprehenderit sequi? Eveniet incidunt quis non provident officiis saepe, rem porro perferendis? Quas placeat dignissimos ipsa numquam? Vitae aliquid rerum molestiae, repellendus vel maiores est eveniet reprehenderit, saepe expedita enim quaerat. Officiis enim accusantium cupiditate recusandae perspiciatis repellat obcaecati a ad veniam, doloremque cumque labore illum in earum id? Non veniam omnis ab suscipit quidem quod neque ipsa quo illo sit, debitis perferendis. Veniam tenetur enim optio accusamus dolorum qui quis officiis quibusdam soluta sit ipsam nesciunt, quam fugit commodi illo debitis. Beatae, distinctio! Quae porro assumenda dolorem, suscipit sequi facere reprehenderit nam molestias molestiae repellat veniam. Qui hic at, quas veritatis dolores vero deserunt excepturi cupiditate dolorum suscipit sit magnam repellat facilis ipsum ducimus iure sed tempore minus odit doloribus dignissimos! Obcaecati fugiat natus cupiditate, quia harum deleniti delectus. Suscipit dolore impedit doloribus ratione non cumque necessitatibus? Dolores dignissimos pariatur mollitia cumque, incidunt tempora quae repellat! Ab labore cupiditate, accusamus perspiciatis rerum aspernatur qui placeat, illum, eum enim explicabo modi consequatur alias nam delectus magni iure quod! Unde ducimus rem voluptates eum. Amet, ea tempore quaerat quae facilis nam qui eligendi harum? Autem, in a sapiente molestias cumque possimus delectus! Pariatur dolore fugit, illum architecto soluta qui cumque quaerat ducimus voluptatum delectus vel quos odio tenetur recusandae laborum eum necessitatibus eligendi impedit consequatur ea ad dolorum aspernatur! Nisi vel aliquid quam temporibus neque fugit, incidunt sit voluptate. Vero veritatis consequatur quos nesciunt atque nam excepturi dolor eius natus tempora dolorum perferendis iusto eveniet, inventore unde corporis sint, sit dignissimos dicta! Voluptatum, provident quaerat dignissimos saepe voluptatem consequuntur minima nisi reiciendis non recusandae odio impedit modi necessitatibus ipsa labore debitis optio exercitationem similique repellat deserunt temporibus ipsum tempore? Harum laudantium deserunt impedit itaque eos optio explicabo ab. Quasi in officiis veniam ab. Laudantium minus assumenda magnam nisi earum molestiae hic alias. Optio provident eligendi praesentium suscipit in omnis vel quos mollitia quo illum asperiores accusamus maxime fugiat porro similique, quidem explicabo molestias earum. Aspernatur minus laudantium impedit natus dolores ad voluptas quod atque quo deleniti animi mollitia debitis dignissimos itaque illo sequi repudiandae, officia tenetur. Ad exercitationem consectetur eum incidunt harum qui minus veniam ratione, quos neque, debitis ab vero? Sunt asperiores commodi beatae tempora modi nostrum quo possimus excepturi enim nemo. Dignissimos illo minus necessitatibus sit ullam nemo aliquid dolorum, corrupti maxime debitis explicabo libero. In placeat facilis quaerat debitis quos rerum, enim harum fuga tempore odit libero fugit assumenda non quidem sed illum optio recusandae delectus voluptate unde nulla et, adipisci reprehenderit. Voluptatibus qui nihil voluptates, illum fugiat, cum dolores nesciunt ullam, expedita esse impedit ea.
+</body>
+</html> 
+
+
+  <!-- inset can be used as a shorthand for setting one or more of the top, right, bottom, and left properties -->
+<!-- <div class="inset-0"></div> top: 0; right: 0; bottom: 0; left: 0; -->
+
+<!-- jb tk div ko height ja phir width nhi mil jjati tab tk uska size usmein kitna content ha na ki child element mein woh decide krta ha agar usmein content hi nhi ha toh uska size zero ,(mtlab width full ha aur height 0 ha) ha toh uspe property jaise ki color bi apply nhi hoga.->
+
+<!-- aur Position --fixed ke sath hmesha z-index mention krna jroori ha always because of stacking context. -->

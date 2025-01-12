@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Height with Tailwind</title>
+    <link rel="stylesheet" href="output.css">
+</head>
+<body class="bg-slate-500 h-screen">
+    
+    <div class="bg-lime-400 h-1/4 hover:h-screen">
+        <h1>Working with Height.</h1>
+    </div>
+
+    <!-- This below will override the slate color of body.  -->
+    <div class="bg-orange-400 h-screen">
+        <h1>Working with Height.</h1>
+    </div>
+ 
+    <!-- h-screen will take whole screen height whether present in nested child ,but h-full will take the full height of only its parent container,
+    will not take the full screen height -->
+
+</body>
+
+</html>

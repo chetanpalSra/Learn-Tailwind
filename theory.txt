@@ -1,0 +1,35 @@
+The issue is that Tailwind CSS does not provide a bg-red class out of the box because it adheres to its utility-first philosophy, which uses a shade-based naming convention (e.g., bg-red-500). If you attempt to use bg-red, Tailwind will not recognize it as a valid class, and the background color will not apply.
+
+The principal is utility-first of Tailwind css that every utility has a single class.
+
+For production world we use CLI setup or PostCSS setup not CND(content network delivery) setup for tailwind css,with cdn we not get auto suggestion intellisense and it not generate output.css file during production which actually fast the project of speed.
+
+npx tailwindcss -i ./src/input.css -o ./src/output.css --watch change it to --> npx tailwindcss -i ./input.css -o ./output.css --watch.
+
+npx:  Executes binaries from npm packages without globally installing them on your system.
+
+tailwindcss: This is the Tailwind CSS CLI tool that processes your CSS files according to your Tailwind configuration.
+
+-i ./src/input.css:
+-i stands for "input".
+This specifies the path to your input CSS file.
+
+"Input file."
+This is the starting CSS file where you include Tailwind's base styles (e.g., @tailwind base; @tailwind components; @tailwind utilities).
+-o ./src/output.css:
+
+"Output file."
+The final CSS file Tailwind creates after processing. This file is what your website uses to style things.
+--watch:
+
+Keeps the tool running in the background.
+If you make changes to your HTML or CSS files, it automatically updates the output.css file.
+Tells the CLI to watch for changes in your input files (like ./src/input.css or files specified in your Tailwind configuration).
+If you edit the input file or any referenced file in content property in tailwind.config.js as i have specified * that all files (e.g., HTML or JS files containing class names), the CLI automatically recompiles the output CSS file.
+This is ideal for development workflows, where you frequently modify class names or styles.
+
+What it does:
+You write code: For example, you add a class like bg-blue-500 to your HTML.
+Tailwind updates: It sees that bg-blue-500 is used and adds the relevant CSS for that class to the output.css file.
+File updates live: Any changes you make are automatically reflected in the output.css.(when we save our file.)
+This is super useful for development because you don't need to manually recompile or refresh—everything happens automatically!

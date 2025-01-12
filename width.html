@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Width with Tailwind</title>
+    <link rel="stylesheet" href="output.css">
+</head>
+<body>
+    <!-- Always max-width is applied if simple width is greater than max-width. -->
+    <h1 class="bg-blue-500 w-52 max-w-32">We are Coding.</h1>
+
+    <!-- Now here width will be displayed 36 on display but it can go upto max width of 64 --> 
+
+    <h1 class="bg-red-500 max-w-64 w-36">We are Coding.</h1>
+
+    <!-- Giving width by percentage(1/2 = 50%), and only width can given in percentage not max width or min width can be given in percentage. -->
+
+    <!-- This sets the width of the element to 50% of the parent container's width. -->
+
+    <h1 class="bg-green-500 w-1/2">We are Coding.</h1>
+
+    <!-- Here all width classes upper than w-64 will be displayed on screen according to their length as min-width is 64 but they are greater than it,now here w-32 but it will be displayed as min-w-64 on screen as min-width is 64. -->
+
+    <h1 class="bg-slate-500 min-w-64 w-32">We are Coding.</h1>
+
+    <!-- Here w-96 will be displayed on screen as it is not less than min-w-64 -->
+
+    <h1 class="bg-orange-500 min-w-64 w-96">We are Coding.</h1>
+
+    <!--  jitna hmara text utni hi width ho toh --> 
+
+    <h1 class="bg-yellow-500 w-fit">We are Coding....</h1>
+
+    <h1 class="bg-orange-900 w-1/3">We are Coding....</h1>
+
+    <h1 class="bg-orange-600 w-1/3 hover:w-1/2">We are Coding....</h1>
+
+    <h1 class="bg-lime-100 w-[150px]">We are Coding....</h1>
+
+   
+
+
+
+</body>
+</html> 
